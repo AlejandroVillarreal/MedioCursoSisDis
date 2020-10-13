@@ -13,7 +13,7 @@ public class Algoritmo {
 		Ciudad ciudad = ciudades.get((int)(ciudades.size()*Math.random()));
 		actualizaRutas(ruta_mas_corta,ciudades,ciudad);
 		while (ciudades.size() >= 1) {
-			ciudad.getSigCiudad(ciudades,ciudad);
+			ciudad = getSigCiudad(ciudades,ciudad);
 			actualizaRutas(ruta_mas_corta,ciudades,ciudad);
 		}
 		return new Ruta(ruta_mas_corta);
