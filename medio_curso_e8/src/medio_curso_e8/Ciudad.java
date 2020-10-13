@@ -22,7 +22,7 @@ public class Ciudad {
 		return this.coordenada_y;
 	}
 	
-	public String getNombreCiudad() {
+	public String toString() {
 		return this.nombre;
 	}
 	//calcula distancia euclideana
